@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Angle Meter</string>
+    <string name="camera_permission_required">Camera permission is required to show live preview.</string>
+    <string name="camera_toggle_desc">Toggle camera preview</string>
+    <string name="camera_switch_desc">Switch camera</string>
+    <string name="overlay_scheme_toggle_desc">Switch overlay color scheme</string>
+    <string name="screenshot_button_desc">Save screenshot</string>
+    <string name="angle_single_format">%1$.1f°</string>
+    <string name="angle_pair_format">%1$.1f° | %2$.1f°</string>
+</resources>

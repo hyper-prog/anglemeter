@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+# Common binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.keystore binary
+*.jks binary
+*.apk binary
+*.aab binary
+*.so binary
+*.jar binary
