@@ -20,10 +20,9 @@ Changelog: https://github.com/hyper-prog/anglemeter/releases
 RepoType: git
 Repo: https://github.com/hyper-prog/anglemeter.git
 
-Summary: AngleMeter is an Android app for real-time angle and alignment measuring tool with camera picture.
+Summary: AngleMeter is a real-time angle and alignment measuring tool with camera
 Description: |
-  AngleMeter is an Android app that allows users to measure angles and alignments in real-time using the device's camera. It provides a simple and intuitive interface for capturing and analyzing angles, making it a useful tool for various applications such as construction, DIY projects.
-
+  AngleMeter is allows users to measure angles and alignments in real-time using the device's camera. It provides a simple and intuitive interface for capturing and analyzing angles, making it a useful tool for various applications such as construction.
   The app helps you level and align the device by combining sensor-based angle visualization with an optional live camera overlay.
 
 # Keep manual update mode until first F-Droid integration is validated.
@@ -31,11 +30,11 @@ AutoUpdateMode: None
 UpdateCheckMode: None
 
 Builds:
-  - versionName: "1.01"
-    versionCode: 1
-    commit: v1.01
+  - versionName: "1.02"
+    versionCode: 2
+    commit: v1.02
     gradle:
       - yes
 
-CurrentVersion: "1.01"
-CurrentVersionCode: 1
+CurrentVersion: "1.02"
+CurrentVersionCode: 2
