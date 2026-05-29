@@ -49,13 +49,16 @@ Build and maintain an Android angle-meter application in Kotlin using Android St
 - GitHub Actions must build the release APK on GitHub-hosted runners.
 - Build must run only on `release: published` events.
 - The built release APK must be attached to GitHub Release assets.
-18. Licensing:
+18. F-Droid support:
+- Keep the F-Droid metadata template in `fdroid/com.anglemeter.app.yml`.
+- GitHub Actions release builds remain separate from F-Droid's own build/sign pipeline.
+19. Licensing:
 - The project is licensed under Apache License 2.0 and must include a root `LICENSE` file with Apache-2.0 terms.
-19. App UI text language for first version is English.
-20. Minimum Android API is 29.
-21. Use root `build.bat` for local CLI builds on this PC; it auto-selects Android Studio JBR and local SDK.
-22. `build.bat` without arguments must build release by default.
-23. Local release builds are signed with debug signing config for installability during device testing.
+20. App UI text language for first version is English.
+21. Minimum Android API is 29.
+22. Use root `build.bat` for local CLI builds on this PC; it auto-selects Android Studio JBR and local SDK.
+23. `build.bat` without arguments must build release by default.
+24. Local release builds are signed with debug signing config for installability during device testing.
 
 ## Scope
 In scope:
