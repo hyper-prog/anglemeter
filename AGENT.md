@@ -47,6 +47,7 @@ Build and maintain an Android angle-meter application in Kotlin using Android St
 - After `clean.bat`, `build.bat` must still be able to perform a successful build.
 17. CI/CD workflow:
 - GitHub Actions must build the release APK on GitHub-hosted runners.
+- Build must run automatically on push to the default branch.
 - The built release APK must be uploaded as a downloadable workflow artifact.
 - On `release: published`, attach the APK to GitHub Release assets as well.
 18. Licensing:
