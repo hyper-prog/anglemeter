@@ -6,6 +6,14 @@ AngleMeter is an Android app for real-time angle and alignment feedback.
 
 The app helps you level and align the device by combining sensor-based angle visualization with an optional live camera overlay.
 
+## Screenshot
+
+![AngleMeter screenshot](images/screenshot.png)
+
+## Repository
+
+https://github.com/hyper-prog/anglemeter
+
 ## Features
 
 - Fixed center cross with a sensor-driven rotating cross.

@@ -1,11 +1,8 @@
 name: Release APK
 
 on:
-  push:
-    branches: [main, master]
   release:
     types: [published]
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -42,16 +39,7 @@ jobs:
           chmod +x ./gradlew
           ./gradlew --no-daemon clean assembleRelease
 
-      - name: Upload APK as workflow artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: app-release-apk
-          path: app/build/outputs/apk/release/*.apk
-          if-no-files-found: error
-          retention-days: 30
-
       - name: Upload APK to GitHub Release assets
-        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         with:
           files: app/build/outputs/apk/release/*.apk
