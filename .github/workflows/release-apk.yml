@@ -39,7 +39,12 @@ jobs:
           chmod +x ./gradlew
           ./gradlew --no-daemon clean assembleRelease
 
+      - name: Rename release APK asset
+        run: |
+          APK_PATH=$(ls app/build/outputs/apk/release/*.apk | head -n 1)
+          cp "$APK_PATH" app/build/outputs/apk/release/anglemeter-release.apk
+
       - name: Upload APK to GitHub Release assets
         uses: softprops/action-gh-release@v2
         with:
-          files: app/build/outputs/apk/release/*.apk
+          files: app/build/outputs/apk/release/anglemeter-release.apk

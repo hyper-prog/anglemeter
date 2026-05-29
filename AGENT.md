@@ -49,6 +49,7 @@ Build and maintain an Android angle-meter application in Kotlin using Android St
 - GitHub Actions must build the release APK on GitHub-hosted runners.
 - Build must run only on `release: published` events.
 - The built release APK must be attached to GitHub Release assets.
+- Release asset file name should be `anglemeter-release.apk`.
 18. F-Droid support:
 - Keep the F-Droid metadata template in `fdroid/com.anglemeter.app.yml`.
 - GitHub Actions release builds remain separate from F-Droid's own build/sign pipeline.
